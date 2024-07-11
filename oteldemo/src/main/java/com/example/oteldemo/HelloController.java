@@ -9,10 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
-
     private static final Tracer tracer = GlobalOpenTelemetry.getTracer("java-service");
-
     private final HelloService service;
+
 
     public HelloController(HelloService service) {
         this.service = service;
@@ -27,10 +26,8 @@ public class HelloController {
 
 @Service
 class HelloService {
-
     @WithSpan("HelloService:getMessage")
     public String getMessage() {
-
         return "Hello world";
     }
 }
