@@ -2,6 +2,7 @@
 * Spring Boot 3
 * Opentelemetry
   * Distributed tracing
+  * Application metric
   * Logging
 
 ## Steps to run
