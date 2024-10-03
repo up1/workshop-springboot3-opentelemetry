@@ -1,7 +1,7 @@
 # Workshop :: Spring Boot 3 + OpenTelemetry
 * Spring Boot 3
 * Opentelemetry
-  * Distributes tracing
+  * Distributed tracing
   * Logging
 
 ## Steps to run
@@ -10,6 +10,17 @@ $docker compose up -d --build
 $docker compose ps
 ```
 
-List of urls
-* Jaeger :: http://localhost:16686/search
-* API :: http://localhost:8080/hello
+## Distributed tracing with [Jaeger](https://www.jaegertracing.io/)
+* Hello API
+  * http://localhost:8080/hello
+* Jaeger
+  * http://localhost:16686/search
+
+## Application metric
+* Actuator with Prometheus
+  * http://localhost:8080/actuator
+  * http://localhost:8080/actuator/prometheus
+* Login API
+  * Login success = 200 => http://localhost:8080/login?case=success
+  * Login fail case01 = 400 => http://localhost:8080/login?case=case01
+  * Login fail case02 = 500 => http://localhost:8080/login?case=case02
