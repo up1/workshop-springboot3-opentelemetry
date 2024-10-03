@@ -13,6 +13,7 @@ $docker compose ps
 ## Distributed tracing with [Jaeger](https://www.jaegertracing.io/)
 * Hello API
   * http://localhost:8080/hello
+  * http://localhost:8080/user/all
 * Jaeger
   * http://localhost:16686/search
 
