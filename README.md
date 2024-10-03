@@ -25,3 +25,8 @@ $docker compose ps
   * Login success = 200 => http://localhost:8080/login?case=success
   * Login fail case01 = 400 => http://localhost:8080/login?case=case01
   * Login fail case02 = 500 => http://localhost:8080/login?case=case02
+* Prometheus server
+  * http://localhost:9000
+  * metric name
+    * http_server_requests_seconds_count
+    * login_api_total
